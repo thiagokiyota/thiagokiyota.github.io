@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Vídeos e Imagens</title>
+    <style>
+        /* Estilo básico para a estrutura */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            overflow-y: scroll; /* Adiciona barra de rolagem vertical */
+            padding-bottom: 150px; /* Altura do rodapé */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .gallery, .videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery img, .videos iframe {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery img {
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px; /* Certifique-se de que a altura do rodapé corresponde */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao Pesquisas Legais</h1>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="#home">Página Inicial</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#imagens">Imagens</a>
+    </nav>
+
+    <!-- Página Inicial -->
+    <section id="home">
+        <h2>Bem-vindo!</h2>
+        <p>Este é o meu site onde compartilho vídeos e imagens interessantes. Navegue pelas seções abaixo!</p>
+    </section>
+
+    <!-- Seção de Vídeos -->
+    <section id="videos">
+        <h2>Vídeos</h2>
+        <div class="videos">
+            <!-- Exemplo de vídeo incorporado do YouTube -->
+            <iframe src="https://www.youtube.com/embed/IYxeyPh_nio" title="Como é fabricada a BICICLETA #BORAVÊ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/IYxeyPh_nio" title="Como é fabricada a BICICLETA #BORAVÊ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/IYxeyPh_nio" title="Como é fabricada a BICICLETA #BORAVÊ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Seção de Imagens -->
+    <section id="imagens">
+        <h2>Imagens</h2>
+        <div class="gallery">
+            <img src="https://content.nationalgeographic.pt/medio/import/attachment/NatGeo/Historia/FactosDinossauros/d1.jpg" alt="Imagem 1">
+            <img src="https://via.placeholder.com/300x200" alt="Imagem 2">
+            <img src="https://via.placeholder.com/300x200" alt="Imagem 3">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Meu Site © 2025</p>
+    </footer>
+
+</body>
+</html>
